@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('barang');
 });
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('barang', 'BarangController');
+Route::resource('kategori', 'KategoriController');

@@ -28,6 +28,19 @@
                 <input class="form-control" type="text" name="nama_kategori" id="namakategori">
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="form-group col-md-3">
+                <button class="btn btn-success" type="submit">
+                    Tambah Kategori
+                </button>
+            </div>
+            <div class="form-control col-md-2">
+                <a href="{{ URL::previous() }}" class="btn btn-primary">
+                    Batal
+                </a>
+            </div>
+        </div>
     </form>
 </div>
 @endsection
